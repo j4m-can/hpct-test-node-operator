@@ -1,0 +1,19 @@
+# Copyright 2022 Canonical Ltd.
+# See LICENSE file for licensing details.
+
+# For a complete list of supported options, see:
+# https://juju.is/docs/sdk/metadata-reference
+
+name: hpct-test-node-operator
+display-name: |
+  Test node operator
+description: |
+  Principal operator test node. To be used with
+  hpct-test-subordinate-operator.
+summary: |
+  Principal operator for test node.
+
+provides:
+  test-ready:
+    interface: subordinate-ready
+    scope: container
